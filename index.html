@@ -11,23 +11,59 @@
 <body class="">
     <header class="header">
         <a href="#"><img src="css/images/logo/Booki.png" alt="Bookie" height="19"></a>
-        <nav class="nav-header">
-            <a class="a-nav a-selected" href="#">Hébergements</a>
-            <a class="a-nav" href="#">Activités</a>
+        <nav class="nav_header">
+            <a class="a_nav a_selected" href="#">Hébergements</a>
+            <a class="a_nav" href="#">Activités</a>
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-            <p>En plein centre-ville ou en pleine nature</p>
-            <form action="" class="form-search">
-                <div class="search-p1">
+        <section class="">
+            <h2 class="title_section">Trouvez votre hébergement pour des vacances de rêve</h2>
+            <p class="subtitle">En plein centre-ville ou en pleine nature</p>
+            <form action="" class="form_search">
+                <div class="search_p1">
                     <i class="fa-sharp fa-solid fa-location-dot"></i>
                 </div>
-                <input class="search-p2" type="text">
-                <input class="search-p3" type="submit" value="Rechercher">
+                <input class="search_p2" type="text" placeholder="Où ?">
+                <input class="search_p3" type="submit" value="Rechercher">
             </form>
+            <div class="content_filter">
+                <label for="filter">Filtres</label>
+                <div id="filter">
+                        <a href="" class="filter_btn">
+                            <i class="fa-sharp fa-solid fa-money-bill-wave"></i>
+                            <p>Économique</p>
+                        </a>
+                        <a href="" class="filter_btn">
+                            <i class="fa-sharp fa-solid fa-person"></i>
+                            <p>Familial</p>
+                        </a>
+                        <a href="" class="filter_btn">
+                            <i class="fa-sharp fa-solid fa-heart"></i>
+                            <p>Romantique</p>
+                        </a>
+                        <a href="" class="filter_btn">
+                            <i class="fa-sharp fa-solid fa-dog"></i>
+                            <p>Animaux autorisés</p>
+                        </a>
+                </div>
+            </div>
+            <div class="content_information">
+                <div class="information_i">
+                    <i class="fa-sharp fa-solid fa-info"></i>
+                </div>
+                <p>
+                    Plus de 500 logements sont disponibles dans cette ville
+                </p>
+            </div>
         </section>
+        <section class="content_card_loc">
+            <div>
+
+            </div>
+            <article></article>
+        </section>
+
     </main>
     <footer>
 
