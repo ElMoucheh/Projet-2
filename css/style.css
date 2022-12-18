@@ -197,7 +197,7 @@ body {
 
 .content_card_loc{
     display: flex;
-    margin: 20px 0;
+    margin: 30px 0;
 }
 
 .content_card_sch{
@@ -262,6 +262,57 @@ body {
     justify-content: space-between;
 }
 
+.card_mpp{
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    border: white solid 5px;
+    overflow: hidden;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.card_mpp:not(:last-child){
+    margin-bottom: 30px;
+}
+
+.detail_car_mpp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.content_card_act{
+    margin-bottom: 75px;
+}
+
+.line_card_act{
+    display: flex;
+}
+
+.card_act{
+    flex: 1;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;}
+
+.card_act:not(:last-child){
+    margin-right: 30px;
+}
+
+.img_card_act{
+    height: 440px;
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.txt_card_act{
+    margin: 15px;
+}
+
+
 footer {
     display: flex;
     justify-content: space-between;
@@ -279,7 +330,8 @@ footer > div{
 
 .fa-star {
 	color: var(--grey-color);
-    padding-top: 15px;
+    padding-top: 5px;
+    font-size: 12px;
 }
 
 .fa-star.blue {
