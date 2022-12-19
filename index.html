@@ -9,7 +9,7 @@
     <title>Bookie</title>
 </head>
 <body>
-    <header class="header">
+    <header>
         <a href="#"><img src="css/images/logo/Booki.png" alt="Bookie" height="19"></a>
         <nav class="nav_header">
             <a class="a_nav a_selected" href="#">Hébergements</a>
@@ -17,7 +17,7 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section class="content_search_filter">
             <h2 class="title_section">Trouvez votre hébergement pour des vacances de rêve</h2>
             <p class="subtitle">En plein centre-ville ou en pleine nature</p>
             <form action="" class="form_search">
@@ -25,7 +25,7 @@
                     <i class="fa-sharp fa-solid fa-location-dot"></i>
                 </div>
                 <input class="search_p2" type="text" placeholder="Où ?">
-                <input class="search_p3" type="submit" value="Rechercher">
+                <button type="submit" class="search_p3 txt_filter"><i id="icon_search" class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
             </form>
             <div class="content_filter txt_filter">
                 <label>Filtres</label>
@@ -157,9 +157,9 @@
                     <h2 class="title_section">Les plus populaires</h2>
                     <i class="fa-solid fa-chart-line color_blue title_section"></i>
                 </div>
-                <div>
+                <div class="list_card_mpp">
                     <a href="#" class="card_mpp">
-                        <img class="img_crad_mpp" height="124" width="137" src="css\images\hebergements\2_large\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
+                        <img class="img_card_mpp" src="css\images\hebergements\2_large\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
                         <div class="detail_car_mpp">
                             <div>
                                 <h3 class="card_title">Hôtel Le soleil du matin</h3>
@@ -175,7 +175,7 @@
                         </div>
                     </a>
                     <a href="#" class="card_mpp">
-                        <img class="img_crad_mpp" height="124" width="137" src="css\images\hebergements\2_large\aw-creative-VGs8z60yT2c-unsplash.jpg" alt="">
+                        <img class="img_card_mpp" src="css\images\hebergements\2_large\aw-creative-VGs8z60yT2c-unsplash.jpg" alt="">
                         <div class="detail_car_mpp">
                             <div>
                                 <h3 class="card_title">Chambres d’hôtes Au cœur de l’eau</h3>
@@ -191,7 +191,7 @@
                         </div>
                     </a>
                     <a href="#" class="card_mpp">
-                        <img class="img_crad_mpp" height="124" width="137" src="css\images\hebergements\2_large\febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="">
+                        <img class="img_card_mpp" src="css\images\hebergements\2_large\febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="">
                         <div class="detail_car_mpp">
                             <div>
                                 <h3 class="card_title">Hôtel Bleu et Blanc</h3>
@@ -228,6 +228,7 @@
                     <img class="img_card_act" src="css\images\activites\2_large\florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
                     <h3 class="card_title txt_card_act">Notre-Dame-de-la-Garde</h3>
                 </a>
+
             </div>
         </section>
     </main>
