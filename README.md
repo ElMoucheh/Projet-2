@@ -39,3 +39,4 @@ Sarah vous envoie un e-mail pour vous présenter l’avancée du projet.
 > [Images du site de Booki](https://course.oc-static.com/projects/D%C3%A9veloppeur+Web/DWP_P3+HTML+CSS+Booki/Images+Booki.zip)  
 > [Note de synthèse pour intégration du site Booki](https://course.oc-static.com/projects/D%C3%A9veloppeur+Web/IW_P3+HTML+CSS+Booki/Note+de+synthe%CC%80se+pour+inte%CC%81gration+du+site+Booki+(IW).pdf)  
 
+Ravi par ce projet, vous commencez par vous plonger dans l’étude des maquettes ! 
