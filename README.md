@@ -11,9 +11,9 @@ Vous êtes chargé d'intégrer l'interface du site avec du code HTML et CSS. Pou
 
 Sarah vous envoie un e-mail pour vous présenter l’avancée du projet.
 
-> Objet : Maquettes site Booki
-> De : Sarah
-> À : Vous
+> Objet : Maquettes site Booki  
+> De : Sarah  
+> À : Vous  
 > ______________________________________________________
 > Bonjour,
 > 
