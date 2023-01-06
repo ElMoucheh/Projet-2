@@ -384,7 +384,7 @@ footer > div{
         border-bottom: 3px var(--grey-color) solid;;
     }
 
-    .a_selected {
+    .a_nav:hover {
         border-top: none;
         border-bottom: 3px var(--blue-color) solid;
         color: var(--blue-color);
