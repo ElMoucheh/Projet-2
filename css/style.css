@@ -98,7 +98,7 @@ nav{
     padding: 50px 20px;
 }
 
-.a_selected {
+.a_nav:hover {
     border-top: 2px var(--blue-color) solid;
     color: var(--blue-color);
 }
