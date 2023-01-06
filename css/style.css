@@ -55,11 +55,6 @@
     color: black;
 }
 
-html{
-    display: flex;
-    justify-content: center;
-}
-
 a {
     text-decoration: none;
     color: black;
@@ -74,32 +69,33 @@ li {
 }
 
 body {
-    width: 1440px; 
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px; 
     padding: 0 50px 0 50px; 
     font-family: "RalewayM";
-
 }
 
 /*______________________*/
 
 /*________HEADER________*/ 
 
-.header{
+header{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.header > * {
-    padding: 50px 0px 50px 0px;
+header > * {
+    padding: 0px;
 }
 
-.ul_nav{
+nav{
     display: flex;
 }
 
 .a_nav{
-    padding: 50px 20px 50px 20px;
+    padding: 50px 20px;
 }
 
 .a_selected {
@@ -114,32 +110,42 @@ body {
 .form_search{
     display: flex;
     padding: 10px 0 10px 0;
-    font-size: 18;
+    font-size: 18px;
 }
 
 .search_p1{
     background-color: var(--grey-color);
     padding: 15px 20px;
     border-radius: 15px 0 0 15px;
-    font-size: 18;
+    font-size: 18px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .search_p2{
     border: solid 1px var(--grey-color);
-    padding: 15px 20px;
+    padding: 10px 15px;
+    max-height: 50px;
     font-size: 18px;
 }
+
 .search_p3{
     border: none;
     background-color: var(--blue-color);
     color: white;
     font-size: 18px;
-    padding: 15px 20px;
+    font-family: "RalewayM";
+    letter-spacing: 1px;
+    padding: 0 20px;
     border-radius: 0px 15px 15px 0px;
-
 }
+
+.search_p3::before{
+    content: 'Rechercher';
+    font-weight: bold;
+}
+
 .content_filter{
     display: flex;
     align-items: center;
@@ -161,7 +167,7 @@ body {
     border-radius: 50px;
     border: solid var(--grey-color) 2px;
     margin: 10px 5px;
-    padding: 15px 25px;
+    padding: 10px 20px;
     transition: 0.2s;
 }
 
@@ -208,38 +214,29 @@ body {
     margin-right: 30px;
 }
 
-.list_card_sch{
-    display: flex;
-    flex-direction: column;
-}
-
 .line_card_sch{
     display: flex;
     margin-bottom: 30px;
 }
 
-.line_card_sch > a{
+.card_sch{
     display: flex;
     flex: 1;
     transition: 0.2s;
-}
-
-.line_card_sch > a:hover{
-    transform: translateY(-10px);
-}
-
-.line_card_sch > a:not(:last-child){
-    margin-right: 30px;
-}
-
-.card_sch{
-    display: flex;
     flex-direction: column;
     background-color: white;
     border-radius: 15px;
     border: white solid 5px;
     overflow: hidden;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.card_sch:hover{
+    transform: translateY(-10px);
+}
+
+.card_sch:not(:last-child){
+    margin-right: 30px;
 }
 
 .img_crad_sch{
@@ -262,6 +259,11 @@ body {
     justify-content: space-between;
 }
 
+.list_card_mpp{
+    display: flex;
+    flex-direction: column;
+}
+
 .card_mpp{
     display: flex;
     background-color: white;
@@ -273,6 +275,12 @@ body {
 
 .card_mpp:not(:last-child){
     margin-bottom: 30px;
+}
+
+.img_card_mpp{
+    object-fit: cover;
+    height: 124px;
+    width: 137px;
 }
 
 .detail_car_mpp{
@@ -302,7 +310,7 @@ body {
 }
 
 .img_card_act{
-    height: 440px;
+    height: 370px;
     display: block;
     width: 100%;
     object-fit: cover;
@@ -331,6 +339,7 @@ footer > div{
 .fa-star {
 	color: var(--grey-color);
     padding-top: 5px;
+    padding-bottom: 0;
     font-size: 12px;
 }
 
@@ -340,4 +349,179 @@ footer > div{
 
 .stars{
     display: inline-flex;
+}
+
+/* RESONSIVE MOBILE*/
+
+@media (max-width: 768px) {
+
+    body{
+        padding: 0; 
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header > a{
+        padding: 20px;
+    }
+
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .a_nav{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex: 1;
+        padding: 20px 20px;
+        border-bottom: 3px var(--grey-color) solid;;
+    }
+
+    .a_selected {
+        border-top: none;
+        border-bottom: 3px var(--blue-color) solid;
+        color: var(--blue-color);
+    }
+
+    .content_search_filter{
+        padding: 40px 15px 0px 15px;
+    }
+
+    .form_search{
+        margin: 30px 0;
+        justify-content: center;
+    }
+
+    .search_p3::before{
+        content: "\f002";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+    }
+
+    .search_p2{
+        width: auto
+    }
+
+    .content_filter{
+        margin-bottom: 30px;
+    }
+
+    .filter_btn{
+        justify-content: flex-start;
+    }
+
+    .filter_btn > p {
+        font-size: 11px;
+    }
+
+    .content_card_loc{
+        flex-direction: column;
+    }
+
+    .content_card_mpp{
+        border-radius: 0px;
+        padding: 30px 20px;
+    }
+
+    .content_card_sch{
+        width: 100%;
+        order: 2;
+        background-color: white;
+        padding: 30px 20px;
+    }
+
+    .line_card_sch{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .card_sch{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .more{
+        display: none;
+    }
+
+    .content_card_act{
+        padding: 30px 20px;
+    }
+
+    .line_card_act{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card_act{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .img_card_act{
+        height: 150px;
+    }
+
+    .card_act > h3{
+        margin: 20px;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    footer > div{
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    .content_card_loc{
+        flex-direction: column;
+    }
+
+    .content_card_sch{
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .list_card_mpp{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card_mpp{
+        display: flex;
+        flex: 1;
+        height: 144px;
+    }
+
+    .card_mpp:not(:last-child){
+        margin-right: 20px;
+    }
+
+    .img_card_mpp{
+        height: 100%;
+        width: 100px;
+    }
+
+    .detail_car_mpp > div > h3{
+        font-size: 14px;
+    }
+
+    .detail_car_mpp > div > p{
+        font-size: 13px;
+    }
+
+    .img_card_act{
+        height: 200px;
+    }
+
 }
